@@ -6,12 +6,12 @@ class Mathutils < Formula
   
     def install
       lib.install "libmathutils.a"
-      include.install "mathutils.h"
+      
     end
   
     test do
       system "test -f #{lib}/libmathutils.a"
-      system "test -f #{include}/mathutils.h"
+      
     end
   end
   
